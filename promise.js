@@ -79,7 +79,7 @@ class Promise {
           callback(onRejected);
         });
       }
-      if ((this.promiseState = "pending")) {
+      if ((this.promiseState === "pending")) {
         //保存回调函数
         this.callbacks.push({
           onResolved: function () {
